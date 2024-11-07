@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="2" total="8" passed="5" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-11-02T13:29:13 IST" name="Suite" finished-at="2024-11-02T13:30:03 IST" duration-ms="50116">
+    <groups>
+      <group name="login">
+        <method signature="LoginTest.useridtest()[pri:1, instance:testcases.LoginTest@783a467b]" name="useridtest" class="testcases.LoginTest"/>
+        <method signature="LoginTest.passwordtest()[pri:2, instance:testcases.LoginTest@783a467b]" name="passwordtest" class="testcases.LoginTest"/>
+      </group> <!-- login -->
+    </groups>
+    <test started-at="2024-11-02T13:29:13 IST" name="LoginTest" finished-at="2024-11-02T13:29:58 IST" duration-ms="44733">
+      <class name="testcases.ProductSearchTest">
+        <test-method signature="searchProducts(java.lang.String)[pri:1, instance:testcases.ProductSearchTest@1ed6388a]" started-at="2024-11-02T13:29:29 IST" name="searchProducts" data-provider="getdata" depends-on-groups="login" finished-at="2024-11-02T13:29:37 IST" duration-ms="7600" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Shirt]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchProducts -->
+        <test-method signature="searchProducts(java.lang.String)[pri:1, instance:testcases.ProductSearchTest@1ed6388a]" started-at="2024-11-02T13:29:37 IST" name="searchProducts" data-provider="getdata" depends-on-groups="login" finished-at="2024-11-02T13:29:51 IST" duration-ms="14115" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Pant]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.util.NoSuchElementException">
+            <full-stacktrace>
+              <![CDATA[java.util.NoSuchElementException
+at java.base/java.util.ArrayList$Itr.next(ArrayList.java:970)
+at testcases.ProductSearchTest.searchResult(ProductSearchTest.java:52)
+at testcases.ProductSearchTest.searchProducts(ProductSearchTest.java:36)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:136)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:658)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:219)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:923)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:192)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:808)
+at org.testng.TestRunner.run(TestRunner.java:603)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:429)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:423)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:383)
+at org.testng.SuiteRunner.run(SuiteRunner.java:326)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1249)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+at org.testng.TestNG.runSuites(TestNG.java:1092)
+at org.testng.TestNG.run(TestNG.java:1060)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.util.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchProducts -->
+        <test-method signature="searchProducts(java.lang.String)[pri:1, instance:testcases.ProductSearchTest@1ed6388a]" started-at="2024-11-02T13:29:51 IST" name="searchProducts" data-provider="getdata" depends-on-groups="login" finished-at="2024-11-02T13:29:57 IST" duration-ms="6337" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Coat]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchProducts -->
+      </class> <!-- testcases.ProductSearchTest -->
+      <class name="testcases.LoginTest">
+        <test-method is-config="true" signature="openBrowser(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.LoginTest@783a467b]" started-at="2024-11-02T13:29:13 IST" name="openBrowser" finished-at="2024-11-02T13:29:17 IST" duration-ms="3823" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://www.amazon.in]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[LoginReport]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[LoginTest]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method signature="useridtest()[pri:1, instance:testcases.LoginTest@783a467b]" started-at="2024-11-02T13:29:17 IST" name="useridtest" finished-at="2024-11-02T13:29:23 IST" duration-ms="6383" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- useridtest -->
+        <test-method signature="passwordtest()[pri:2, instance:testcases.LoginTest@783a467b]" started-at="2024-11-02T13:29:23 IST" name="passwordtest" finished-at="2024-11-02T13:29:28 IST" depends-on-methods="testcases.LoginTest.useridtest" duration-ms="5183" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- passwordtest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcases.LoginTest@783a467b]" started-at="2024-11-02T13:29:57 IST" name="closeBrowser" finished-at="2024-11-02T13:29:58 IST" duration-ms="493" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- testcases.LoginTest -->
+    </test> <!-- LoginTest -->
+    <test started-at="2024-11-02T13:29:58 IST" name="NewRegister" finished-at="2024-11-02T13:30:03 IST" duration-ms="5352">
+      <class name="testcases.NewCustomerTest">
+        <test-method is-config="true" signature="openBrowser(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testcases.NewCustomerTest@6e9175d8]" started-at="2024-11-02T13:29:58 IST" name="openBrowser" finished-at="2024-11-02T13:30:02 IST" duration-ms="3904" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[https://www.amazon.in]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[NewCustomerReport]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[NewCustomerTest]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method signature="newcustomer()[pri:0, instance:testcases.NewCustomerTest@6e9175d8]" started-at="2024-11-02T13:30:02 IST" name="newcustomer" finished-at="2024-11-02T13:30:03 IST" duration-ms="1229" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newcustomer -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testcases.NewCustomerTest@6e9175d8]" started-at="2024-11-02T13:30:03 IST" name="closeBrowser" finished-at="2024-11-02T13:30:03 IST" duration-ms="215" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- testcases.NewCustomerTest -->
+    </test> <!-- NewRegister -->
+  </suite> <!-- Suite -->
+</testng-results>
